@@ -6,7 +6,6 @@
         var isMarried : Boolean // var 可写属性 等于 getter/setter
     }
 ```
-
 2. 自定义访问器
 
 ```java
@@ -19,9 +18,7 @@
         //等价于 get() = height == width
     }
 ```
-
 3. 使用 when 处理枚举类等价于 case 
 
     when比case更强大，可以使用任意对象
-
 4. 
