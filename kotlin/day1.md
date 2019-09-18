@@ -7,7 +7,7 @@
     }
 ```
 
-2.自定义访问器
+2. 自定义访问器
 
 ```java
     class Retangle(val height : Int, val width : Int){
@@ -20,8 +20,8 @@
     }
 ```
 
-3.使用 when 处理枚举类等价于 case 
+3. 使用 when 处理枚举类等价于 case 
 
     when比case更强大，可以使用任意对象
 
-4.
+4. 
