@@ -21,4 +21,10 @@
 3. 使用 when 处理枚举类等价于 case 
 
     when比case更强大，可以使用任意对象
-4. 
+4. 创建集合
+
+```java
+    val set = hashSetOf(1, 7, 53)
+    val list = arrayListOf(1, 7, 53)
+    val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
+```
