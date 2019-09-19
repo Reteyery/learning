@@ -51,6 +51,14 @@
         println("Kotlin".lastChar())
     }
 ```
+    扩展属性，eg：
+```java
+    var String.lastChar: Char
+        get() = get(length - 1)
+        set(value: Char) {
+            this.setChatAt(legth - 1, value)
+        }
+```
 7. 处理集合：可变参数、中缀调用
 
     解构声明，用来把一个单独的组合值展开到多个变量中
