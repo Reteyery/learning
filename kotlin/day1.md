@@ -37,9 +37,9 @@
 ```java
     fun View.showOff() = println("I'm a view")
     fun Button.showOff() = println("I'm a button")
->>> val view: View = Button()
->>> view.showOff()
-I'm a view 
+    >>> val view: View = Button()
+    >>> view.showOff()
+    I'm a view 
 ```
     以下例子扩展String属性，增加lastChar函数功能，this代表String类型的一个实例，即字符串"Kotlin"
 ```
