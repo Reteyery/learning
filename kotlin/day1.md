@@ -59,7 +59,23 @@
             this.setChatAt(legth - 1, value)
         }
 ```
-7. 处理集合：可变参数、中缀调用
+7. 处理集合：可变参数；键值对的处理：中缀调用和解构声明
 
+    中缀调用声明，需要使用infix修饰符标记函数，to函数声明：
+    infix fun Any.to(other: Any) = Pair(this, other)
+    to函数返回一个Pair类型的对象，Pair是Kotlin标准库中的类
+    中缀调用，eg：
+```java
+    1.to("one") //一般to函数的调用
+    1 to "one"  //使用中缀符号调用to函数
+```
     解构声明，用来把一个单独的组合值展开到多个变量中
-8. 
+
+8. 局部函数和扩展
+
+    局部函数：函数嵌套
+```java
+    fun() {
+        fun() {}
+    }
+```    
