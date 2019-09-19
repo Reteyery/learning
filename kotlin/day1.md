@@ -32,6 +32,15 @@
 
 6. 扩展函数和属性
 
+    扩展函数在java中将会被编译成 static method；当给基类和子类都定义一个同名的扩展函数，输出结果由该变量的静态类型所决定，而不是这个变量的运行时类型
+    eg:
+```java
+    fun View.showOff() = println("I'm a view")
+    fun Button.showOff() = println("I'm a button")
+>>> val view: View = Button()
+>>> view.showOff()
+I'm a view 
+```
     以下例子扩展String属性，增加lastChar函数功能，this代表String类型的一个实例，即字符串"Kotlin"
 ```
     package com.rete.kotlin
