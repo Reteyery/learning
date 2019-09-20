@@ -70,7 +70,6 @@
     1 to "one"  //使用中缀符号调用to函数
 ```
     解构声明，用来把一个单独的组合值展开到多个变量中
-
 8. 局部函数和扩展
 
     局部函数：函数嵌套
@@ -79,3 +78,26 @@
         fun() {}
     }
 ```    
+9. open、final和abstract修饰符：默认为final，可见性修饰符：默认为public
+
+    所有没有特别需要在子类中被重写的类和方法应该被显示的标注为final
+    kotlin中类和方法默认为final，如果允许创建一个类的子类，需要使用open来标示这个类；侧外需要给没一个可以被重写的属性或方法添加open修饰符
+10. 嵌套类
+
+```java
+    class Button : View {
+        override fun getCurrentState(): State = ButtonState()
+        override fun restoreState(state: State) {/*...*/}
+        // 没有显示修饰符的嵌套类等价于Java中的static嵌套类
+        class ButtonState : State {/*...*/} 
+    }
+
+    //若需要持有外部类的引用，需要使用inner修饰符
+    class Outer {
+        inner class Inner {
+            fun {/*...*/}
+        }
+    }
+```
+11. 
+
